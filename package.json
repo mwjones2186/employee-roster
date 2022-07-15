@@ -4,16 +4,14 @@
   "description": "This is an employee roster generator app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose test/*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "enquirer": "^2.3.6",
-    "fs": "^0.0.1-security",
-    "inquirer": "^8.2.4",
-    "jest": "^28.1.3"
+    "inquirer": "^8.2.4"
   },
   "directories": {
     "lib": "lib",
@@ -26,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/mwjones2186/employee-roster/issues"
   },
-  "homepage": "https://github.com/mwjones2186/employee-roster#readme"
+  "homepage": "https://github.com/mwjones2186/employee-roster#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
 }
