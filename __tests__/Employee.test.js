@@ -1,10 +1,21 @@
 const Employee =  require('../lib/Employee')
 
-test('checks if the new hire is an employee or other', ()=>{
-  const emp = new Employee('test', 2, 'test@email.com')
+// these tests will confirm that Name, ID and Email are all working properly
 
-  expect(emp.name).toBe('test')
-  expect(emp.getName()).toBe('test')
-  expect(emp.id).toBe(2)
-  expect(emp.getRole()).toBe('Employee')
+test('checks if the employee name is working',()=>{
+    const emp = new Employee('Mike', 1, 'email.com')
+    expect(emp.name).toBe('Mike')
+    expect(emp.getName()).toBe('Mike')
 })
+test('checks if the employee ID is working',()=>{
+    const emp = new Employee('bill',3,'email.com')
+    expect(emp.id).toBe(3)
+    expect(emp.getId()).toBe(3)
+})
+test('checks if the employee email is captured',()=>{
+    const emp = new Employee('Erica', 5, 'erica@email.com')
+    expect(emp.email).toBe('erica@email.com')
+    expect(emp.getEmail()).toBe('erica@email.com')
+})
+
+
