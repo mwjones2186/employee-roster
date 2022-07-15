@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 const template = require('./src/template.js');
-const Employees = require('./src/employees.js');
+const Employees = require('./lib/Employee.js');
 
 const employees = [];
 
