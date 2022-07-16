@@ -15,7 +15,7 @@ const managerQuestions = [
     },
     {
         type: 'input',
-        name: 'idNumber',
+        name: 'id',
         message: 'What is your employee ID?',
     },
     {
@@ -38,7 +38,7 @@ const engineerQuestions = [
     },
     {
         type: 'input',
-        name: 'idNumber',
+        name: 'id',
         message: 'What is your employee ID?',
     },
     {
@@ -60,7 +60,7 @@ const internQuestions = [
     },
     {
         type: 'input',
-        name: 'idNumber',
+        name: 'id',
         message: 'What is your employee ID?',
     },
     {
@@ -78,7 +78,7 @@ const menuQuestion= {
     type: 'list',
     name: 'menu',
     message: 'what would you like to do?',
-    choices: ['Add A Engineer', 'Add A Intern', 'Finished'],
+    choices: ['Add an Engineer', 'Add an Intern', 'Add an Employee' ,'Finished'],
 };
 
 function start(){
