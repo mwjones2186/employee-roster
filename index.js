@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require('./lib/Manager')
+const generateHTML = require('./src/generateHtml')
 
 const employees = [];
 
@@ -98,6 +99,8 @@ function menu(){
         case 'Add A Intern':
             addIntern()
         break;
+        case 'Finished':
+            generateHTML(employees)
         default: 
 
        }

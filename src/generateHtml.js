@@ -1,3 +1,5 @@
+const fs = require('fs');
+const Manager = require('../lib/Manager');
 
 const handleEmployees = {
     Manager: manager => {
@@ -68,3 +70,12 @@ const handleEmployees = {
     `;
     },
 }
+function generateHTML(){
+    // const manager = document.getElementById('manager')
+    fs.writeFile('../dist/index.html', manager())
+   
+   console.log(handleEmployees.manager)
+
+
+}
+module.exports = generateHTML
